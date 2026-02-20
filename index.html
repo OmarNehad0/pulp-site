@@ -31,6 +31,49 @@ body::before {
   backdrop-filter: blur(3px);
   z-index: -1;
 }
+/* Custom Trustpilot Button Styles */
+.custom-trustpilot-button {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the content vertically */
+  margin-top: 20px; /* Optional margin for spacing */
+}
+
+/* Styling the button itself */
+.custom-trustpilot-button a {
+  display: flex;
+  align-items: center;
+  background-color: #6a0dad; /* Dark purple background */
+  color: white; /* White text */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s;
+  width: fit-content; /* Button adjusts to content width */
+}
+
+/* Trustpilot Logo */
+.trustpilot-logo {
+  height: 20px; /* Adjust logo size */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* Text Styling */
+.custom-trustpilot-button a span {
+  margin-left: 10px; /* Space between the logo and text */
+}
+
+/* Hover effect */
+.custom-trustpilot-button a:hover {
+  background-color: #9b4f96; /* Lighter purple */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Focus state to remove default outline */
+.custom-trustpilot-button a:focus {
+  outline: none;
+}
 
 .container {
   max-width: 1100px;
@@ -162,7 +205,13 @@ body::before {
       <li>HCIM & Ironman Specialized Services</li>
     </ul>
   </div>
-
+<!-- Custom TrustPilot Button -->
+<div class="custom-trustpilot-button">
+  <a href="https://www.trustpilot.com/review/pulp07.net?utm_medium=trustbox&utm_source=TrustBoxReviewCollector" target="_blank" rel="noopener">
+    <img src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg" alt="Trustpilot Logo" class="trustpilot-logo">
+    <span>Review Us</span>
+  </a>
+  
   <div class="section">
     <h2>Why Choose Pulp Services?</h2>
     <p>We prioritize safety, efficiency, and professionalism. Our experienced team ensures your account remains secure while delivering top-tier results.</p>
